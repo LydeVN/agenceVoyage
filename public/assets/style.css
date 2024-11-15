@@ -10,13 +10,16 @@ body{
     background-color: white
 }
 
+header{
+    background-image: url('../img/travelimage.jpg');
+}
+
 .Pres{
     font-family: Oswald;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url('../img/travelimage.jpg');
     background-attachment: fixed;
     background-repeat: inherit;
     padding: 10% 0%;
@@ -26,6 +29,19 @@ body{
     font-size: 5rem;
     font-weight: bold;
     text-shadow: 3px 3px 2px black;
+}
+
+.title .first{
+    color: black;
+}
+
+.title .second{
+    color: #808081;
+    font-weight: none;
+}
+
+.title .third{
+    color: #f511de;
 }
 
 .subTitle {

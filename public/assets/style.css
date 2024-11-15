@@ -3,7 +3,6 @@
 
 *{
     margin: 0 auto;
-    padding: 0 auto;
 }
 
 body{
@@ -11,8 +10,16 @@ body{
 }
 
 header{
+    /* plus tard switch d'image tous les 7sec */
     background-image: url('../img/travelimage.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-size: 100%;
+    margin: 20px;
+    border-radius: 20px;
 }
+
 
 .Pres{
     font-family: Oswald;
@@ -28,11 +35,12 @@ header{
 .title{
     font-size: 5rem;
     font-weight: bold;
+    text-decoration: none;
     text-shadow: 3px 3px 2px black;
 }
 
 .title .first{
-    color: black;
+    color: rgb(39, 38, 38);
 }
 
 .title .second{
@@ -60,4 +68,8 @@ header{
 .title:hover, .subTitle:hover{
     transform: scale(0.9);
     color: rgb(247, 219, 180);
+}
+
+p{
+    margin-bottom: 100px;
 }

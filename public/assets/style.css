@@ -3,11 +3,11 @@
 
 *{
     margin: 0 auto;
-    padding: ° auto;
+    padding: 0 auto;
 }
 
 body{
-    background-color: rgb(250, 240, 215);
+    background-color: white
 }
 
 .Pres{
@@ -17,18 +17,31 @@ body{
     justify-content: center;
     align-items: center;
     background-image: url('../img/travelimage.jpg');
-    padding: 18% 0%;
+    background-attachment: fixed;
+    background-repeat: inherit;
+    padding: 10% 0%;
 }
 
 .title{
     font-size: 5rem;
     font-weight: bold;
-    color: antiquewhite;
     text-shadow: 3px 3px 2px black;
 }
 
 .subTitle {
     font-size: 3rem;
-    color: antiquewhite;
     text-shadow: 3px 3px 2px black;
+    font-style: oblique;
+}
+
+.title, .subTitle{
+    transition: transform 0.3s ease, opacity 0.3s ease, color 0.4s ease; /* Transition pour le changement de couleur */ /* Transition pour la réduction et l’opacité */
+    position: relative;
+    transform-origin: center;
+    color: antiquewhite;
+}
+
+.title:hover, .subTitle:hover{
+    transform: scale(0.9);
+    color: rgb(247, 219, 180);
 }
